@@ -197,6 +197,30 @@
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
                         <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <!-- Radio buttons for application type -->
+                            <div>
+                                <p><h5> Please specify the purpose of the application:<h5>
+                                <input type="radio" id="new_application" name="application_type" value="first">
+                                <label for="first">Visiting only</label><br>
+                                <input type="radio" id="Cat_adoption only" name="application_type" value="Adoptions">
+                                <label for="Adoptions">Cat Adoption</label><br>
+                                <input type="radio" id="Volunteering only" name="volunteer_type" value="Volunteering">
+                                <label for="Volunteering">Volunteering</label><br>
+                            <div>
+                            <!-- Check boxes for major areas of interest-->
+                            <div>
+                                <p><h5>Please indicate your area(s) of interest:</h5>
+                                <input type="checkbox" id="cat_breed" name="cat_breed" value="Cats"
+                                <label for="cat_breed">Searching for specific cat breeds</label><br>
+                                <input type="checkbox" id="Kitten_adoption" name="Kitten_adoption" value="Adopting"
+                                <label for="cat_adoption">Adopting a kitten</label><br>
+                                <input type="checkbox" id="Adult cat_adoption" name="Adult cat_adoption" value="Adopting"
+                                <label for="cat_adoption">Adopting an adult cat</label><br>
+                                <input type="checkbox" id="Volunteer_caring" name="Volunteering_caring" value="Volunteering"
+                                <label for="Volunteering_caring">Helping sick cats</label><br>
+                                <input type="checkbox" id="Volunteer_events" name="Volunteer_events" value="Volunteering"
+                                <label for="Volunteer_events">Volunteering at events</label><br>
+
                             <!-- Name input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
