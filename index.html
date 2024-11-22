@@ -11,6 +11,15 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Internal Javascript-->
+        <script type - "text/javascript">
+        function getRadioValue(radio) {
+            alert("You selected " + radio.value);
+        }
+        function getCheckboxClick(checkbox) {
+            alert("You selected " + checkbox.value);
+        }
+        </script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
@@ -200,25 +209,25 @@
                             <!-- Radio buttons for application type -->
                             <div>
                                 <p><h5> Please specify the purpose of the application:<h5>
-                                <input type="radio" id="new_application" name="application_type" value="first">
+                                <input type="radio" id="new_application" name="application_type" value="first" onchange="getRadioValue(this)">
                                 <label for="first">Visiting only</label><br>
-                                <input type="radio" id="Cat_adoption only" name="application_type" value="Adoptions">
+                                <input type="radio" id="Cat_adoption only" name="application_type" value="Adoptions" onchange="getRadioValue(this)">
                                 <label for="Adoptions">Cat Adoption</label><br>
-                                <input type="radio" id="Volunteering only" name="volunteer_type" value="Volunteering">
+                                <input type="radio" id="Volunteering only" name="volunteer_type" value="Volunteering" onchange="getRadioValue(this)">
                                 <label for="Volunteering">Volunteering</label><br>
                             <div>
                             <!-- Check boxes for major areas of interest-->
                             <div>
                                 <p><h5>Please indicate your area(s) of interest:</h5>
-                                <input type="checkbox" id="cat_breed" name="cat_breed" value="Cats"
+                                <input type="checkbox" id="cat_breed" name="cat_breed" value="Cats" onclick="getCheckboxClick(this)">
                                 <label for="cat_breed">Searching for specific cat breeds</label><br>
-                                <input type="checkbox" id="Kitten_adoption" name="Kitten_adoption" value="Adopting"
+                                <input type="checkbox" id="Kitten_adoption" name="Kitten_adoption" value="Adopting" onclick="getCheckboxClick(this)">
                                 <label for="cat_adoption">Adopting a kitten</label><br>
-                                <input type="checkbox" id="Adult cat_adoption" name="Adult cat_adoption" value="Adopting"
+                                <input type="checkbox" id="Adult cat_adoption" name="Adult cat_adoption" value="Adopting" onclick="getCheckboxClick(this)">
                                 <label for="cat_adoption">Adopting an adult cat</label><br>
-                                <input type="checkbox" id="Volunteer_caring" name="Volunteering_caring" value="Volunteering"
+                                <input type="checkbox" id="Volunteer_caring" name="Volunteering_caring" value="Volunteering" onclick="getCheckboxClick(this)">
                                 <label for="Volunteering_caring">Helping sick cats</label><br>
-                                <input type="checkbox" id="Volunteer_events" name="Volunteer_events" value="Volunteering"
+                                <input type="checkbox" id="Volunteer_events" name="Volunteer_events" value="Volunteering" onclick="getCheckboxClick(this)">
                                 <label for="Volunteer_events">Volunteering at events</label><br>
                             </div>
                             <!--Dropdown menu for cat adoption inerest -->
