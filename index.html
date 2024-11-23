@@ -12,14 +12,21 @@
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Internal Javascript-->
-        <script type - "text/javascript">
+        <script type = "text/javascript">
         function getRadioValue(radio) {
             alert("You selected " + radio.value);
         }
         function getCheckboxClick(checkbox) {
             alert("You selected " + checkbox.value);
         }
+        function getMenuSelected(menu) {
+            alert("You selected " + menu.value)
+        }
+        function getTextboxEntry(textbox) {
+            alert("You entered " + textbox.value)
+        }
         </script>
+
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
@@ -233,8 +240,8 @@
                             <!--Dropdown menu for cat adoption inerest -->
                             <div>
                                 <p><h5>Please select a cat beed:</h5>
-                                <label for="cat_adoption_interest">Cats: </labe>
-                                <select name="cat_adoption_interest" id=cat_adoption_interest">
+                                <label for="cat_adoption_interest">Cats: </label>
+                                <select name="cat_adoption_interest" id=cat_adoption_interest" onchange="getMenuSelection(this)">
                                     <option value=" " selected>Select a Cat</option>
                                     <option value="Calico">Calico</option>
                                     <option value="Siamese">Siamese</option>
@@ -243,7 +250,7 @@
                                     <option value="Orange Cat">Orange Cat</option>
                                     <option value="Other">Other (enter name)</option>
                                 </select>
-                                <input type="text" id="other_cats">
+                                <input type="text" id="other_cats" onkeyup="getTextboxEntry(this)">
                             </div>
                             <!-- Name input-->
                             <div class="form-floating mb-3">
