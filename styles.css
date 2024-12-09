@@ -10979,7 +10979,7 @@ html {
   font-size: 1.25rem;
 }
 .masthead .masthead-avatar {
-  width: 25rem;   /* changed from 15rem to 25rem by VA on 10/28/24 */
+  width: 25rem;  /* changed from 15rem to 25rem by VA on 10/28/2024*/
 }
 
 @media (min-width: 992px) {
@@ -10988,11 +10988,11 @@ html {
     padding-bottom: 6rem;
   }
   .masthead .masthead-heading {
-    font-size: 3rem;   /* changed from 4rem to 3rem by VA on 10/28/24 */
+    font-size: 3rem;  /* changed from 4rem to 3rem by VA on 10/28/2024*/
     line-height: 3.5rem;
   }
   .masthead .masthead-subheading {
-    font-size: 1.0rem;   /*changed from 1.5rem to 1rem by VA on a10/28/24 */
+    font-size: 1.0rem;  /* changed from 1.5rem to 1rem by VA on 10/28/2024*/
   }
 }
 .portfolio .portfolio-item {

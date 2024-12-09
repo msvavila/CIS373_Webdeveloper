@@ -13,48 +13,11 @@
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Internal Javascript-->
         <script type = "text/javascript">
-        function validateForm() {
-            let x1 = document.forms["contactForm"]["name"].value;
-            if (x1 == "") {
-                alert("Name must be filled in");
-                return false;
-            }
-            let x2 = document.forms["contactForm"]["email"].value;
-            if (x2 == "") {
-                alert("Email must be filled in");
-                return false;
-            }
-            let mailformat = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
-            if (!document.forms["contactForms"]["email"].value.match(mailformat))
-            {
-                alert("You have entered an invalid email address");
-                return false;
-            }
-            let x3 = document.forms["contactForm"]["phone"].value;
-            if (x3 == "") {
-                alert("Phone must be filled in");
-                return false;
-            }
-            let x4 = document.forms["contactForm"]["message"].value;
-            if (x4 == "") {
-                alert("Message must be filled in");
-                return false;
-            }
-        }
-        function getRadioValue(radio) {
-            alert("You selected " + radio.value);
-        }
-        function getCheckboxClick(checkbox) {
-            alert("You selected " + checkbox.value);
-        }
-        function getMenuSelected(menu) {
-            alert("You selected " + menu.value)
-        }
-        function getTextboxEntry(textbox) {
-            alert("You entered " + textbox.value)
-        }
+        <script scr="https//cdn.startbootstrap.com/sb-forms-latest.js" > </scipt>
+        <!--Javascript code added for CIS - 373-- >
+        <script src="js/cis373.js"></script>
+        </body>
         </script>
-
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
@@ -63,21 +26,23 @@
         <!--Internal CSS-->
         <style>
             .list-text-color {
-                color:  white;
+                color: white;
                 font-size: 1.3em;
+            }
+
             .parent {
                 text-alight: center;
             }
+
             .parent > ul {
                 text-align: left;
                 display: inline-block;
             }
             .submit_button {
-                background-color:  #4caF50; /* Green */
+                background-color: #4caF50; /* Green */
                 border: none;
-                color:  white;
-                padding: 15px 32px
-                text-align: center;
+                color: white;
+                padding: 15px 32px text-align: center;
                 text-decoration: none;
                 display: inline-block;
                 font-size: 16px;
@@ -86,8 +51,10 @@
                 opacity: 0.6;
                 transition: 0.3s;
             }
-            .submit_button:hover {
-                opacity: 1
+             .submit_button:hover {
+                    opacity: 1
+             }
+        
             }
             .caption
                 caption-side: top;
@@ -101,7 +68,7 @@
             }
             table, th, td {
                 border: 1px solid  black;
-                font-size: 25px
+                font-size: 20px;
                 padding: 10px;
             }
 
@@ -112,27 +79,27 @@
             <caption class="caption"> Cat Adoptions History</caption>
             <tr>
                 <th>Cat Adoptions</th>
-                <th>Total Adopted</th
+                <th>Total Adopted</th>
             </tr>
             <tr>
                 <td>Calico Cats</td>
-                <td style="text-align: center;">75</td
+                <td style="text-align: center;">75</td>
             </tr>
             <tr>
                 <td>Siamese Cats</td>
-                <td style="text-align: center;">30</td
+                <td style="text-align: center;">30</td>
             </tr>
             <tr>
                 <td>American Shorthair Cats</td>
-                <td style="text-align: center;">120</td
+                <td style="text-align: center;">120</td>
             </tr>
             <tr>
                 <td>Tabby Cats</td>
-                <td style="text-align: center;">150</td
+                <td style="text-align: center;">150</td>
             </tr>
             <tr>
                 <td>Orange Cats</td>
-                <td style="text-align: center;">25</td
+                <td style="text-align: center;">25</td>
             </tr>
         </table>
      </div> 
@@ -263,6 +230,12 @@
                     <li><a href="https://spcatampabay.org/index.htm" alt="Animal Shelter"><span class="list-text-color">SPCA of Tampa</span></a></li>
                     <li><a href="https://petfinder.com/index.htm" alt="Adoptable pets"><span class="list-text-color">Pet Finder</span></a></li>
                 </ul>
+            <center>
+            <video width="300" height"200" controls>
+                <source src="./assets/video/CatVideo.mp4" type="video/mp4">
+               Your browser does not support the video tag.
+               </video>
+            </center>
             </div>
         </section>
         <!-- About Section-->
