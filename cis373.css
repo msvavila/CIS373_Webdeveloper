@@ -25,5 +25,22 @@
 .submit_button:hover {
    opacity: 1
 }
+.caption{
+caption-side: top;
+text-align: center;
+font-size: 35px;
+color: red;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+table, th, td {
+    border: 1px solid black;
+    font-size: 20px;
+    padding: 10px;
+}
+
 <link href="css/styles.css" rel="stylesheet" />
-<!--CSS Styles added CIS-->
+<!--CSS Styles added for CIS373-->
+<link href="css/cis373.css" rel="stylesheet" />
